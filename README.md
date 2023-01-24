@@ -12,4 +12,4 @@ A simple bash script for Linux to send a message to [Gotify](https://gotify.net/
 - gotify server
 
 ## Usage
-- `gotify-push -t "Title" -m "Hello World" -p 8 -c markdown -l http://www.alfiosalanitri.it`
+- `gotify-push -t "Title" -m "Hello World" -p 8 -c markdown -l https://www.alfiosalanitri.it`
