@@ -3,7 +3,7 @@ A simple bash script for Linux to send a message to [Gotify](https://gotify.net/
 
 ## Installation
 - `cd ~/path`
-- `git clone https://github.com/alfiosalanitri/gotify-push-nessage.git`
+- `git clone https://github.com/alfiosalanitri/gotify-push-message.git`
 - `cd gotify-push-message`
 - `sudo ./install.sh`
 
