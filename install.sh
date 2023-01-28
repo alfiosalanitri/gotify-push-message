@@ -4,7 +4,8 @@
 # Require root privileges
 
 # Step 1 create the config file or override it
-CONFIG_FILE="$HOME/.config/gotify-push"
+CONFIG_FILE_NAME="gotify-push"
+CONFIG_FILE="$HOME/.config/$CONFIG_FILE_NAME"
 override_file="no"
 create_file="yes"
 if [ -f $CONFIG_FILE ]; then
@@ -47,6 +48,12 @@ if [ "yes" == "$create_file" ] || [ "yes" == "$override_file" ]; then
         file_action="updated"
     fi
     printf "Config file: $CONFIG_FILE $file_action with success.\n"
+    #create a symbolic link to allow the root user to run the script
+    if [ "root" != "$USER" ]; then
+        printf "Type your password to create a symbolic link into /root/.config folder to enable root user to run this script\n"
+        sudo ln -sf $CONFIG_FILE /root/.config/$CONFIG_FILE_NAME
+        printf "Symbolic link created\n"
+    fi
 else
     printf "[ok] Step 1 completed.\n"
 fi
