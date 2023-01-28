@@ -51,7 +51,7 @@ quiet="no"
 CONFIG_FILE="$HOME/.config/gotify-push"
 
 if [ ! -f $CONFIG_FILE ]; then
-  echo "[!] Config file: $CONFIG_FILE not found. Run install.sh before."
+  echo "[!] Config file: $CONFIG_FILE not found. Run ./install.sh before."
   exit 1
 fi
 

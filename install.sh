@@ -72,7 +72,7 @@ select action in "${actions[@]}"; do
             echo "" 
             exit 1
         fi
-        sudo ln -s $script_path /usr/local/bin/gotify-push
+        sudo ln -sf $script_path /usr/local/bin/gotify-push
         printf "Installation completed. Close and open the terminal again and type: gotify-push -h"
         echo ""
         exit 0

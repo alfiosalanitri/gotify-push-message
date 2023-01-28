@@ -5,7 +5,7 @@ A simple bash script for Linux to send a message to [Gotify](https://gotify.net/
 - `cd ~/path`
 - `git clone https://github.com/alfiosalanitri/gotify-push-message.git`
 - `cd gotify-push-message`
-- `sudo ./install.sh`
+- `./install.sh`
 
 ## Dependencies
 - curl
